@@ -1,0 +1,21 @@
+{
+  "name": "MERN_STARTER",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "germancutraro",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.0"
+  }
+}
